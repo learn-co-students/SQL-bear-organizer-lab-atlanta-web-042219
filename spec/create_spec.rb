@@ -2,6 +2,7 @@ describe 'creating bears table' do
   before do
     @db = SQLite3::Database.new(':memory:')
     @sql_runner = SQLRunner.new(@db)
+    # binding.pry
     @sql_runner.execute_create_file
   end
 
